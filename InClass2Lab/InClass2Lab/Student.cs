@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InClass2Lab
 {
-    class Student
+    public class Student
     {
         public string StudentId { get; set; }
 
