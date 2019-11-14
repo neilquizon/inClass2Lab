@@ -2,13 +2,13 @@
 {
     public class Grade
     {
-        public string Student { get; set; }
+        public Student student { get; set; }
 
         public int StudentTotal { get; set; }
 
-        public Grade(string student, int studenttotal)
+        public Grade(Student student, int studenttotal)
         {
-            this.Student = student;
+            this.student = student;
             this.StudentTotal = studenttotal;
         }
     }

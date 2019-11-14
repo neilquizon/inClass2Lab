@@ -25,6 +25,19 @@ namespace InClass2Lab
             Section sectionA = new Section(1, "A", myStudentListA);
             Section sectionB = new Section(2, "B", myStudentListB);
 
+            Grade grade1 = new Grade(student1, 20);
+            Grade grade2 = new Grade(student1, 20);
+            List<Grade> grades = new List<Grade>();
+            grades.Add(grade1);
+            grades.Add(grade2);
+            Assignment assignment1 = new Assignment("InClass2Lab", sectionB, 20, grades);
+
+            Printer.PrintStudentNames(sectionA);
+            Printer.PrintStudentNames(sectionB);
+
+            Printer.PrintAssignmentGrades(assignment1);
+            Printer.PrintAssignmentStudentGrade(assignment1, "A01182496");
+
             Console.ReadLine();
 
 

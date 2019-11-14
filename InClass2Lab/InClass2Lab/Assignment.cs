@@ -12,13 +12,14 @@ namespace InClass2Lab
 
         public int Total { get; set; }
 
-        public List<Grade> GradeList { get; set; }
-
-        public Assignment(string assignmentName, Section section, int total, List<Grade> gradelist)
+        public List<Grade> Grades { get; set; }
+        
+        public Assignment(string assignmentName, Section section, int total, List<Grade> grades)
         {
             this.AssignmentName = assignmentName;
             this.Section = section;
             this.Total = total;
+            this.Grades = grades;
         }
     }
 }
